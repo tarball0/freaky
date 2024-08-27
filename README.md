@@ -1,2 +1,4 @@
-# freaky
-𝓕𝓻𝓮𝓪𝓴𝓲𝓯𝔂 your text 
+# 𝓕𝓻𝓮𝓪𝓴𝔂 
+freakify your text 
+**Running**
+* compile with gcc and run `./freaky "freaky input"`
