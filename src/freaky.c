@@ -21,8 +21,8 @@ int main(int argc, char *argv[]) {
 		wprintf(L"\n");
 	}
 
-	else if (argc == 4 && strcmp(argv[3], "-f")){
-		wprintf(L"works"); //doesn't work
+	else if ((argc == 4) && strcmp(argv[3], "-f")){
+			wprintf(L"works");
 	}
 
 	else{
