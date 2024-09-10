@@ -1,22 +1,32 @@
 #include <locale.h>
 #include <wchar.h>
+#include <string.h>
 
 #define FREAKY_UPPER 119951
 #define FREAKY_LOWER 119945
 
 void freakyprint(int, int, int, wchar_t *);
+void printusage();
 
 int main(int argc, char *argv[]) {
     setlocale(LC_CTYPE, "");
     wchar_t istring[256];
 	if (argc < 2) {
-		wprintf(L"Usage: freaky [-f type] text");
+		printusage();
 	}
 
 	else if (argc == 2) {
 		int len = swprintf(istring, 256, L"%s", argv[1]);
 		freakyprint(FREAKY_LOWER, FREAKY_UPPER, len, istring);
 		wprintf(L"\n");
+	}
+
+	else if (argc == 4 && strcmp(argv[3], "-f")){
+		wprintf(L"works"); //doesn't work
+	}
+
+	else{
+		printusage();
 	}
 
     return 0;
@@ -39,4 +49,8 @@ void freakyprint(int offset_lower, int offset_upper, int len,
             wprintf(L"%lc", istring[i] + offset_lower);
         }
     }
+}
+
+void printusage(){
+	wprintf(L"Usage: freaky [-f type] text");
 }
