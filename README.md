@@ -1,5 +1,5 @@
 # 𝓕𝓻𝓮𝓪𝓴𝔂 
-**Running**
+## Running
 * compile with gcc and run `./freaky "freaky input"`
 * Usage: `freaky \[-f type\] text`
 
