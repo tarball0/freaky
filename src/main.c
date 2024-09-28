@@ -67,4 +67,6 @@ void freakyprint(int offset_lower, int offset_upper, int len,
     wprintf(L"\n");
 }
 
-void printusage() { wprintf(L"Usage: freaky [-f type] text"); }
+void printusage() { 
+	wprintf(L"Usage: freaky [-f type] text\n");
+}
