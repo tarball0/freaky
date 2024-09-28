@@ -1,7 +1,12 @@
 # 𝓕𝓻𝓮𝓪𝓴𝔂 
 ## Running
-* compile with gcc and run `./freaky "freaky input"`
-* Usage: `freaky \[-f type\] text`
+Use the trusty old installation chant to get started:
+```sh
+./configure
+make
+make install
+```
+Usage: `freaky \[-f type\] text`
 
 ## Formatting Types:
 - 𝓕𝓻𝓮𝓪𝓴𝔂 (default)
